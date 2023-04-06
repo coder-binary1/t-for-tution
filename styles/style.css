@@ -1,0 +1,13 @@
+.nav-bg {
+  background-color: #00022a;
+}
+
+.relative {
+  position: relative;
+  bottom: 40px;
+}
+
+.text a {
+  color: #09215d;
+  font-weight: 700;
+}
