@@ -34,7 +34,8 @@ body {
 .find-subject-specialist,
 .tuition-types,
 .courses,
-.says-about-us {
+.says-about-us,
+.footer {
   margin-top: 120px;
   display: flex;
   flex-direction: column;
@@ -162,7 +163,41 @@ body {
   width: 200px;
   border-radius: 50%;
 }
-
+/* footer */
+.footer {
+  flex-direction: row;
+  background-color: #040b16;
+  justify-content: space-around;
+  /* align-items: baseline; */
+  padding: 50px;
+}
+.logo-text,
+.address {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 400px;
+}
+.logo-text img {
+  width: 150px;
+}
+.social-media {
+  list-style-type: none;
+  padding: 0;
+  display: inline;
+}
+.social-media li {
+  display: inline;
+  margin-right: 10px;
+  color: #e78c0c;
+}
+.social-media a {
+  font-size: 1.2em;
+}
+.social-media a,
+.address h4 {
+  color: #e78c0c;
+}
 /* ---------------------------
 ----- responsive layout -----
 ----------------------------*/
@@ -194,5 +229,13 @@ body {
   .who-said-title {
     width: 90vw;
     gap: 10px;
+  }
+
+  .footer {
+    flex-direction: column;
+  }
+  .logo-text,
+  .address {
+    width: 90vw;
   }
 }
